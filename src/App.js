@@ -1,16 +1,16 @@
 
 import './AppkaCss.css';
-import About from './Component/About';
+// import About from './Component/About';
 import Navbar from './Component/Navbar';
 import Textform from './Component/Textform';
 import React, { useState } from 'react';
 import Alert from './Alert';
-import {
- BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//  BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 function App() {
@@ -54,25 +54,25 @@ function App() {
 
   return (
     <>
-    <Router>
+    {/* <Router> */}
 
     <Navbar title="TextUtils" mode={mode} toggelMode={toggelMode} setMode={setMode}/>
         <Alert alert={alert} />
     
       
-      <div className='container my-3'>
+      {/* {/* <div className='container my-3'>
       <Switch>
       <Route exact path="/about"> 
-        <About/>
+        <About/>   
       </Route>
-      <Route exact path="/">
+      <Route exact path="/"> */}
         <Textform heading="Enter text for Analysis" mode={mode} showAlert={showAlert} />
 
-      </Route>
+      {/* </Route> */}
       
-      </Switch>
-      </div>
-    </Router>
+      {/* </Switch> */} */}
+      {/* </div> */}
+    {/* // </Router> */}
     </>
   );
 }
